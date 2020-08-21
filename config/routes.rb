@@ -3,3 +3,4 @@ Rails.application.routes.draw do
   post "/login", to: "users#login" #the login method in the users controller will be mapped to "POST /login"
   get "/auto_login", to: "users#auto_login" #the auto_login method in the users controller will be mapped to "GET /auto_login"
 end
+
