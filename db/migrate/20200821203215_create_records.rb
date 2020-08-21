@@ -4,8 +4,10 @@ class CreateRecords < ActiveRecord::Migration[6.0]
       t.string :title
       t.integer :release_year
       t.string :cover_image
-      t.references :artist
+      t.references :artist, null: false, foreign_key: true
       t.timestamps
+
+      Record.reset_column_information
     end
   end
 end
