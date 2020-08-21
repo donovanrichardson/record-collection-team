@@ -7,8 +7,8 @@ default: &default
 development:
   <<: *default
   database: database_name
-  username: test
-  password: test
+  username: test2
+  password: test2
   host: localhost
   port: 5432
 
